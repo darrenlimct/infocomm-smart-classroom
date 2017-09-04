@@ -38,5 +38,5 @@ cTime time not null,
 primary key (cID),
 constraint eventSubject foreign key (subjectID) references subject(subjectID)
 on delete set null 
-on update cascade,
+on update cascade
 );
