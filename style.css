@@ -1,7 +1,7 @@
 /*Everyone loves css :)perhaps but dabian is better than CSS*/
-body {
-  background-color:#6666ff;
-  color:#ff9933;
+/*Debian is an os. Relevance?*/
+html, body {
+    background-color: #dbf0ff;
+    color: #012138;
+    font-family: "Raleway", "Avenir Next", "Avenir", sans-serif;
 }
-
-  
