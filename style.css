@@ -33,3 +33,7 @@ body {
     width: 100%;
     text-align: center;
 }
+
+.nav-displace {
+    height: 60px;
+}
