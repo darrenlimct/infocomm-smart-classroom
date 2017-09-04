@@ -1,0 +1,9 @@
+{
+  "name": "infocomm-smart-classroom",
+  "version": "1.0.0",
+  "description": "Infocomm hackathon project.",
+  "dependencies": {
+    "express": "^4.11.0",
+    "ejs": "^2.0.0"
+  }
+}
