@@ -1,12 +1,27 @@
 var http    = require('http');
 var express = require('express');
 var app     = express();
-
+var loggedIn = false;
 app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 
+app.get("/login", function(req, res){
+    if (loggedIn){
+        res.redirect("/");
+    }
+    res.render('login');
+})
+
+app.post("/login", function(req, res){
+    //verify
+    loggedIn = true;
+})
+
 app.get("/", function(req, res){
-    res.render('index');
+    if (!loggedIn){
+        res.redirect("login");
+    }
+    res.render('index')
 })
 
 app.use(function(req, res, next){
