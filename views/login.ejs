@@ -10,4 +10,17 @@
     <button class="login-btn">Login</button>
     </div>
 </body>
+<script>
+function login(){
+    console.log("login");
+    $.ajax({
+        type:"POST",
+        url:"/login",
+        error:function(){alert(":(")},
+        success:function(){window.location.href="/"}
+    });
+    console.log("agh")
+}
+$(".login-btn").click(login)
+</script>
 </html>

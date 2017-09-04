@@ -2,6 +2,8 @@ var http    = require('http');
 var express = require('express');
 var app     = express();
 var loggedIn = false;
+var subject = 1;
+
 app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 
@@ -15,6 +17,8 @@ app.get("/login", function(req, res){
 app.post("/login", function(req, res){
     //verify
     loggedIn = true;
+    console.log("erm");
+    res.redirect("/");
 })
 
 app.get("/", function(req, res){

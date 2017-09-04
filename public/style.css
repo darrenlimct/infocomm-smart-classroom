@@ -65,3 +65,7 @@ a:hover {
     background-color: white;
     padding: 2vw;
 }
+
+.login-btn:hover, .login-btn:active {
+    cursor: pointer;
+}
