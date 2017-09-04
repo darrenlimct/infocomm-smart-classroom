@@ -28,7 +28,7 @@ primary key (subjectID),
 constraint subjectTeacher foreign key (teacherID) references teachers(teacherID)
 );
 
-create table calenderEvent(
+create table calendarEvent(
 cID integer(5) not null,
 subjectID integer(5),
 cEventName varchar(30) not null,
